@@ -1,1 +1,0 @@
-gcc -o rf refactor_version_1.c -L./libs -lGamepad
