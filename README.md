@@ -1,5 +1,5 @@
 # GPIO_Gamepad
-This is a simple game controller from GPIO input on raspberry pi.
+This is a barebones low level virtual game controller from GPIO input on raspberry pi.
 It emulates a connected xbox controller and translates basic GPIO Button inputs as controller inputs. Tested with Steam Input system and works great.
 
 
