@@ -7,7 +7,7 @@
 #include <stdbool.h>
 #include <linux/input.h>
 #include "Gamepad.h"
-
+#include <string.h>
 
 struct uinput_user_dev uinp ;
  
@@ -27,11 +27,11 @@ int create_gamepad(struct uinput_user_dev uinp,int uinp_fd)
 
 
 
-    memcpy(uinp.name, "Virtual Gamepad (Stormpad)", 80);
+    memcpy(uinp.name, "Custom Gamepad Name", 80);
     uinp.id.bustype = BUS_USB;
     
-    uinp.id.vendor = 0x069; 
-    uinp.id.product = 0x068;
+    uinp.id.vendor = 0x079; 
+    uinp.id.product = 0x078;
     uinp.id.version = 0x0100; 
 
     static int abs[] = { ABS_X, ABS_Y, ABS_RX, ABS_RY};
