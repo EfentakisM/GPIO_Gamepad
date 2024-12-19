@@ -4,7 +4,7 @@
 #include <errno.h>
 #include <stdbool.h>
 #include "Gamepad.h"
-
+#include <string.h>
 #define PRESSED 1
 #define RELEASED -1
 #define MAX_THREADS 2
